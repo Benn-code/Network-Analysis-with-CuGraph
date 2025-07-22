@@ -1,5 +1,6 @@
 # Proyecto
 Aquí les dejo una breve explicación de cómo crear sus propias ramas y cómo podría ser el flujo de trabajo. 
+
 ## Paso 1: Clonar el Repositorio de GitHub a tu Máquina Local
 
 Esto crea una copia del repositorio de la nube a sus computadores. Solo necesitas hacer esto una vez por proyecto.
