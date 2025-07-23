@@ -4,8 +4,8 @@ Este documento describe la estructura y las instrucciones para ejecutar el proye
 
 ## 🔗 Enlaces Importantes
 
-* **Video de Exposición del Proyecto:** [**PEGAR AQUÍ EL ENLACE A YOUTUBE DE SU VIDEO FINAL**]
-* **Repositorio de GitHub (para referencia y control de versiones):** [**PEGAR AQUÍ EL ENLACE A TU REPOSITORIO DE GITHUB**]
+* **Video de Exposición del Proyecto:** [(https://www.youtube.com/watch?v=PwLIpvTRyp8)]
+* **Repositorio de GitHub (para referencia y control de versiones):** [(https://github.com/Benn-code/Network-Analysis-with-CuGraph)]
 
 ## 🚀 Estructura del Proyecto
 
