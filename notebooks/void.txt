@@ -1,1 +1,0 @@
-Aquí la idea es subir los notebooks de Colab, creo que la extensión debería ser .ipynb
