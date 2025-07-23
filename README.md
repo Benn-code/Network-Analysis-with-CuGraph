@@ -31,7 +31,7 @@ docker build -t cugraph-project-env .
 
 Este proceso descargará la imagen base de NVIDIA CUDA e instalará todas las dependencias y librerías necesarias para C++ y Python, incluyendo cuGraph. Este paso puede tardar varios minutos dependiendo de tu conexión a internet.
 
-2. Ejecutar Programas C++ (Demostración Conceptual)
+### 2. Ejecutar Programas C++ (Demostración Conceptual)
 Nota Importante: Dado que no se tuvo acceso a un clúster HPC con GPU dedicada para pruebas exhaustivas, la ejecución de estos programas C++ es de carácter conceptual para esta entrega. El Dockerfile instala las dependencias y compila el código, demostrando la estructura de un proyecto C++ con cuGraph.
 
 Asumiendo que la compilación fue exitosa durante la construcción de la imagen Docker (ver paso 1), los ejecutables se encontrarían dentro del contenedor en sus respectivos directorios build dentro de /app/src/.
@@ -52,7 +52,8 @@ docker run --rm --gpus all cugraph-project-env /app/src/real_network/build/my_re
 --gpus all: Permite que el contenedor acceda a todas las GPUs disponibles en el sistema host.
 
 my_erdos_renyi_program (y similares) son nombres de ejemplo de los ejecutables. Verifiquen los nombres exactos definidos en los CMakeLists.txt o Makefiles de cada subproyecto C++.
-3. Ejecutar Programas Python
+
+### 3. Ejecutar Programas Python
 Este contenedor también está configurado con Python y todas las librerías necesarias de cuGraph y visualización. Los scripts Python ejecutables se encuentran en la carpeta src/python_scripts/.
 
 Para ejecutar un script Python dentro del contenedor:
@@ -79,3 +80,28 @@ python3 run_real_network.py
 # se generarán en el directorio actual dentro del contenedor (/app/src/python_scripts/).
 # Para acceder a ellos desde tu sistema host, necesitarías copiarlos fuera del contenedor
 # antes de que se elimine (ver `docker cp` o usar volúmenes, que no se explican aquí para simplicidad).
+
+Para salir del contenedor, simplemente escribe exit.
+
+### 🐍 Notebooks de Google Colab
+Los notebooks originales de Google Colab (.ipynb) utilizados para el desarrollo y las demostraciones en el video se encuentran en la carpeta notebooks/. Estos notebooks incluyen la instalación de las librerías y las ejecuciones en el entorno de Colab.
+
+Pueden ser abiertos directamente en Google Colab:
+
+Abre Google Colab.
+
+Haz clic en Archivo > Abrir cuaderno.
+
+Selecciona la pestaña Subir y arrastra el archivo .ipynb deseado.
+
+###  🎬 Video de Exposición
+Nuestro video de 8 minutos presenta un resumen del proyecto, las herramientas utilizadas, los problemas resueltos y los resultados obtenidos.
+
+[https://www.youtube.com/watch?v=PwLIpvTRyp8]
+
+### 👤 Integrantes del Equipo
+[Karlo Jozef Amortegui Caballero]
+
+[Fredy Camilo Andrés Leal Vega]
+
+[Benjamin David Salgado Jaime]
